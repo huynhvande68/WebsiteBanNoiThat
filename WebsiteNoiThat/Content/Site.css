@@ -1,0 +1,132 @@
+/* Fix for Owl Carousel news section */
+#slider-tintuc .item {
+    height: 320px; /* Increased fixed height container */
+    overflow: hidden;
+    position: relative;
+    background: #fbf2df;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 0;
+}
+
+#slider-tintuc .item .news-image-link {
+    display: block;
+    height: 200px; /* Fixed height for image container */
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+
+#slider-tintuc .item img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures image covers the area */
+    display: block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+#slider-tintuc .item:hover img {
+    transform: scale(1.05);
+}
+
+#slider-tintuc .item p {
+    text-align: center;
+    padding: 15px 20px 10px; /* Increased left and right padding */
+    margin: 10px 0 0 0; /* Added top margin for spacing */
+    height: 90px; /* Increased height for title area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #e9e2d0; /* Add a subtle separator */
+}
+
+#slider-tintuc .item p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#slider-tintuc .item:hover p a {
+    color: #000;
+}
+
+/* Add proper spacing around the carousel */
+.ctboxleft {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Make the carousel container fixed size */
+#slider-tintuc.owl-carousel {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.owl-carousel .owl-wrapper-outer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100% !important;
+}
+
+.owl-carousel .owl-wrapper {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100% !important;
+}
+
+.owl-carousel .owl-item {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100% !important;
+}
+
+/* Override any potential bootstrap padding */
+.boxleft .row, 
+.boxleft .col, 
+.boxleft [class*="col-"] {
+    padding: 0;
+    margin: 0;
+}
+
+/* Fix navigation dots position */
+.owl-theme .owl-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Ensure the boxleft has a fixed size */
+.boxleft {
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+} 

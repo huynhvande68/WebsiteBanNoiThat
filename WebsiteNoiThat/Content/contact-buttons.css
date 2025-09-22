@@ -1,0 +1,65 @@
+.contact-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.contact-btn img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.messenger-btn {
+    background: transparent;
+}
+
+.phone-btn {
+    background: transparent;
+}
+
+.zalo-btn {
+    background: transparent;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .contact-buttons {
+        right: 15px;
+        bottom: 15px;
+        gap: 6px;
+    }
+    
+    .contact-btn {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .contact-btn img {
+        width: 40px;
+        height: 40px;
+    }
+} 

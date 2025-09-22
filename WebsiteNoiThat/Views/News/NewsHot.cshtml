@@ -1,0 +1,16 @@
+﻿@model List<Models.EF.News>
+
+@foreach (var sp in Model)
+{
+    <div class="item tintucl" style="padding: 0; margin: 0;">
+        <a href="/News/Show?NewsId=@sp.NewsId" class="news-image-link" style="padding: 0; margin: 0; display: block;">
+            <img src="@Url.Content("~/image/" + sp.Photo)" alt="@sp.Title" style="width: 100%; padding: 0; margin: 0;" />
+        </a>
+        <p style="margin-top: 10px; text-align: center; padding-left: 15px; padding-right: 15px;">
+            <a href="/News/Show?NewsId=@sp.NewsId" style="display: block; width: 100%; text-align: center;">@sp.Title</a>
+        </p>
+    </div>
+}
+
+
+
